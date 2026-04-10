@@ -169,26 +169,6 @@ npm run build:frontend
 
 ---
 
-## Recommended story-driven demo
-
-Matches the automated “full demo” narrative:
-
-1. Create campaign (two milestones, e.g. 40 / 60).  
-2. Two backers contribute; finalize funding successfully.  
-3. Milestone 1 submitted → voted through → **finalize vote** → creator receives first payout.  
-4. Milestone 2 rejected → **Grace** → creator resubmits → rejected again → **Failed**.  
-5. Backers **claim refund** proportionally on the remainder.
-
----
-
-## Security & hygiene
-
-- Never commit **private keys**, **mnemonics**, or production RPC/API keys.  
-- `.gitignore` excludes `node_modules`, `.env`, Hardhat `cache` / `artifacts` (run `compile` + `sync-abi` after clone).  
-- Demo contracts are **not audited**; do not use as-is on mainnet.
-
----
-
 ## Notes
 
 - Designed primarily for **local Hardhat** presentation and coursework; **testnet/mainnet** would need config, verification, and parameter review.  
